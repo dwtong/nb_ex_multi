@@ -12,13 +12,13 @@ local function add_disting_player()
 
     function player:note_on(note, vel)
         local v_vel = vel * 10
-        local v8 = (note - 48)/12        
+        local v8 = (note - 60)/12        
         crow.ii.disting.note_pitch(note, v8)
         crow.ii.disting.note_velocity(note, v_vel)
     end
 
     function player:pitch_bend(note, amount)
-        local v8 = (note + amount - 48)/12
+        local v8 = (note + amount - 60)/12
         crow.ii.disting.note_pitch(note, v8)
     end
 
