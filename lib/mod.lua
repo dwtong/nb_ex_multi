@@ -1,5 +1,5 @@
 local mod = require 'core/mods'
-local menu = require("nb_ex/lib/menu")
+local menu = require("nb_ex_multi/lib/menu")
 local data_file = _path.data .. mod.this_name .. "/mod.state"
 local device_count
 
